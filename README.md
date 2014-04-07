@@ -8,5 +8,8 @@ transactions.
 
 #Updates
 
+#####Version 1.1:
+* Keep track of balance
+
 #####Version 1.0:
 * Standard code from Code academy

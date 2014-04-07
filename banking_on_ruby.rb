@@ -7,13 +7,14 @@ class Account
 	end
 
 	def display_balance(pin_number)
-		puts pin_number == pin ? "Blance: $#{@balance}." : pin_error
+		puts pin_number == pin ? "Balance: $#{@balance}." : pin_error
 	end
 
 	def withdraw(pin_number, amount)
 		if pin_number == pin
-			balance - amount
-			puts "Withdrew $#{amount}. New blance: $#{@balance}."
+			new_balance = @balance - amount
+			puts "Withdrew $#{amount}. New balance: $#{new_balance}."
+			@balance = new_balance
 		else
 			pin_error
 		end
@@ -30,6 +31,7 @@ class Account
 	end
 end
 
-checking_account = Account.new("Student Checking", 1_000_000_00)
+checking_account = Account.new('Student Checking', 1_000_000)
 checking_account.display_balance(1234)
 checking_account.withdraw(1234, 500_000)
+checking_account.display_balance(1234)
