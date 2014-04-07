@@ -8,6 +8,9 @@ transactions.
 
 #Updates
 
+#####Version 1.2
+* Added deposit method
+
 #####Version 1.1:
 * Keep track of balance
 
