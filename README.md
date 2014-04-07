@@ -7,6 +7,8 @@ rely on private methods to make sure the user's PIN (personal identification num
 transactions.
 
 #Updates
+#####Version 1.3
+* Added user input capabilities
 
 #####Version 1.2
 * Added deposit method
